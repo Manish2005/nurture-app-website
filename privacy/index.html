@@ -163,14 +163,14 @@
   </header>
 
   <h1>Privacy Policy</h1>
-  <p class="updated">Last updated: 29 September 2026</p>
+  <p class="updated">Last updated: 18 October 2026</p>
 
   <div class="lede">
-    <p>Nurture is a plant care reminder app. This policy explains what it does with your information. The short version: everything you record about your plants stays on your phone, whether or not you make an account. An account is optional and is needed only to identify plants from a photo. Nurture shows advertisements, and the advertising provider collects information about your device.</p>
+    <p>Nurture is a plant care reminder app. This policy explains what it does with your information. The short version: your plants stay on your phone unless you choose to start or join a household or subscribe to Premium, which keep them on our server. Making an account does not move them. An account is optional and is needed for identifying plants, households and subscriptions. The free app shows advertisements, and the advertising provider collects information about your device.</p>
   </div>
 
   <h2>What Nurture stores</h2>
-  <p>Nurture keeps the following on your device, in its own private storage:</p>
+  <p>By default Nurture keeps the following on your device, in its own private storage. Households and Premium cloud backup, described below, are the only things that also keep them on our server:</p>
   <ul>
     <li>The plants you add — their names, any notes you write, and the spaces you file them under</li>
     <li>Photos you choose to add to a plant, copied into the app's private storage</li>
@@ -179,7 +179,7 @@
   </ul>
 
   <h2>What Nurture collects about you</h2>
-  <p><strong>Your plants, photos, notes, and care history never leave your device</strong> unless you deliberately export them. That stays true if you make an account: an account is used for identifying plants, not for storing your collection. What an account and identification involve is described in their own sections below.</p>
+  <p><strong>Your plants, photos, notes, and care history stay on your device</strong> unless you export them, start or join a household, or use Premium cloud backup. Making an account does not move them. What an account, identification and households involve is described in their own sections below.</p>
   <p><strong>Nurture does collect anonymous usage data</strong>, through Google Analytics for Firebase, so that it is possible to see which parts of the app get used and whether reminders are working. That covers things like: the app being opened, a plant being added, a care task being completed or snoozed, a page of the plant guide being opened, and whether notification permission was granted. Some of those carry a detail, such as which kind of care a task was, or which species from the plant guide a plant is.</p>
   <p><strong>It never includes anything you wrote or took.</strong> Not the names you give your plants, not your notes, not your photos. It never includes your account or any identifier Nurture creates, and there is no attempt to work out who you are.</p>
   <p><strong>You can turn it off.</strong> Settings, under Privacy, has a switch called "Share anonymous usage data". Turning it off stops collection entirely rather than merely reducing it, including the automatic session and screen counts that Google's SDK would otherwise record.</p>
@@ -188,15 +188,28 @@
   <p><strong>Advertising is separate.</strong> See the section below.</p>
 
   <h2>An account, if you make one</h2>
-  <p>You can use everything in Nurture except plant identification without an account. If you choose to make one, you sign in with <strong>Apple</strong> or <strong>Google</strong>, and Nurture's server keeps:</p>
+  <p>You can use the core of Nurture, plants, schedules, reminders and the guide, without an account. An account is needed for plant identification, households, Premium and gifts. If you choose to make one, you sign in with <strong>Apple</strong> or <strong>Google</strong>, and Nurture's server keeps:</p>
   <ul>
     <li>Your name and email address, as Apple or Google provide them. If you use Apple's Hide My Email, Nurture only ever sees the private address Apple gives it</li>
     <li>An account number created when you sign up, which is how your account is told apart from others</li>
     <li>How many plant identifications you have used each month, including any extra ones earned by watching an advertisement, and counters that limit how often requests can be made</li>
   </ul>
-  <p>That is all an account holds. <strong>Your plants, reminders, history, and photos are not uploaded to it</strong>; they stay on your phone as they did before you signed in, and signing out leaves them in place.</p>
+  <p>Subscribing also keeps your plan and when it ends against the account. <strong>Making an account does not upload your plants, reminders, history or photos</strong>; they stay on your phone as they did before you signed in, and signing out leaves them in place. Only a household or Premium cloud backup, below, puts them on our server.</p>
   <p>The account is held with <strong>Firebase</strong>, a Google service, which runs Nurture's sign-in and server. Google's handling of it is covered by <a href="https://firebase.google.com/support/privacy">Firebase's privacy documentation</a>. To check that requests come from the genuine Nurture app, the app asks Apple's App Attest or Google Play Integrity to vouch for it; that check says nothing about you or your plants.</p>
-  <p>The account is used only to run identification and your monthly allowance. It is not used for advertising, not shared with anyone else, and never included in usage data.</p>
+  <p>The account is used only to run identification, your monthly allowance, households and your subscription. It is not used for advertising and never included in usage data.</p>
+
+  <h2>Households, cloud backup and gifts</h2>
+  <p>These are optional and need an account. When you start or join a household, or use Premium cloud backup (a household of one), <strong>the plants in it, with their notes, care history, spaces and photos, are stored on Nurture's server</strong>, and the plants of a household are seen by every member of it. Members who join choose to. Other members also see the name you gave in the app, who completed which care, and when.</p>
+  <ul>
+    <li>A household is run by the person who subscribes. Plants move into one only when you choose and, for a member, when the owner agrees</li>
+    <li>A caretaker is someone the owner gives time-limited access; it ends on its date</li>
+    <li>A gift is a one-time code, valid for 7 days. The plant is copied to the person who accepts it and removed from the giver. Nothing is sent to anyone until they accept</li>
+    <li>Photos in a household are kept in Firebase Storage. Nothing here is used for advertising or shared with anyone outside Nurture's own service providers</li>
+    <li>When you leave or are removed, the household's plants are removed from your phone. If a subscription ends, nothing you made is deleted; an owner's household becomes their own collection and the other members lose access</li>
+  </ul>
+
+  <h2>Subscriptions</h2>
+  <p>Payment is taken by Apple or Google, never by Nurture, and Nurture never sees your card details. Subscriptions are managed with <strong>RevenueCat</strong>, which processes them for Nurture. It receives your account number and the store's receipt, to tell Nurture which plan applies to you. Nurture keeps your plan and when it ends against your account. RevenueCat's handling is covered by its own privacy policy.</p>
 
   <h2>Identifying a plant from a photo</h2>
   <p>With an account, you can take or choose a photo and Nurture will suggest what plant it is. Nothing is sent until you choose a photo for this.</p>
@@ -220,7 +233,7 @@
 
   <h2>Backups you create</h2>
   <p>Nurture can create a backup file containing all of your plants, schedules, history, and photos. This happens only when you ask for it.</p>
-  <p>You choose where that file goes — a folder on your device, or another app through the share sheet. Once you have shared or saved it, the file is outside Nurture's control, and how it is stored is governed by wherever you put it. Nurture never uploads a backup anywhere on its own.</p>
+  <p>You choose where that file goes — a folder on your device, or another app through the share sheet. Once you have shared or saved it, the file is outside Nurture's control, and how it is stored is governed by wherever you put it. Nurture never uploads this file anywhere on its own. Premium cloud backup, described above, is separate and only runs if you use it.</p>
 
   <h2>Permissions</h2>
   <p>Nurture asks for these only when the relevant feature is used, and each one is optional:</p>
@@ -250,15 +263,15 @@
   <p><strong>Your choices.</strong> On iPhone, advertisements are never personalised. They are chosen by context, Nurture never asks to track you, and no consent form is shown, because nothing it does needs one. On Android, where personalised advertisements can be shown, Nurture asks first in the places that require consent for them, the EEA and the UK among others, using Google's consent form, and you can change your answer later from the app's settings. Android also offers controls over the advertising identifier: under Settings → Privacy → Ads, you can reset it or opt out of personalisation entirely.</p>
 
   <h2>Children</h2>
-  <p>Nurture is not directed at children and is not intended for them. It has no age-gate; if you are responsible for a child using it, note that the advertising described above applies to them as it does to anyone.</p>
+  <p>Nurture is not directed at children and is not intended for them. It has no age-gate; if you are responsible for a child using it, note that the advertising described above applies to them as it does to anyone. Subscribers do not see advertisements.</p>
 
   <h2>Deleting your information</h2>
-  <p>Everything you record is stored on your device:</p>
+  <p>Everything you record is stored on your device, unless you chose a household or Premium cloud backup, covered under your account below:</p>
   <ul>
     <li>Deleting a plant removes it, its schedules, its history, and its photo</li>
     <li>Uninstalling Nurture removes all of it</li>
   </ul>
-  <p><strong>Your account.</strong> Delete it from the app, under Settings, Account, Delete account, or without the app by following the steps on the <a href="../delete-account/">account deletion page</a>. Deleting it removes your sign-in and everything stored with the account. Two things are kept because they hold nothing about you: the monthly identification count for your phone, under the scrambled code described above, so that a new account on the same phone does not reset it; and counts that mention no account at all, such as how many identifications happened each day. Server logs that include your account number are deleted automatically within 30 days.</p>
+  <p><strong>Your account.</strong> Delete it from the app, under Settings, Account, Delete account, or without the app by following the steps on the <a href="../delete-account/">account deletion page</a>. Deleting it removes your sign-in and everything stored with the account, including a household you own with its plants, history and photos, your place in other households, your gifts, and your customer record at RevenueCat (that request is sent without waiting for an answer, and is repeated by hand if it fails). What you added to someone else's household stays there, under a member who no longer has a name. Deleting the account does not cancel a subscription; cancel it in the store. Two things are kept because they hold nothing about you: the monthly identification count for your phone, under the scrambled code described above, so that a new account on the same phone does not reset it; and counts that mention no account at all, such as how many identifications happened each day. Server logs that include your account number are deleted automatically within 30 days.</p>
   <p><strong>Feedback you sent.</strong> Nurture's developer also holds any feedback you chose to send. To have it deleted, email <a href="mailto:appnurture1@gmail.com">appnurture1@gmail.com</a>; if you gave an email address with it, that is the easiest way to find it, and otherwise describe what you sent and roughly when.</p>
   <p><strong>Advertising.</strong> Information collected for advertising is held by Google; their policy above describes how to manage or remove it, and resetting your advertising identifier severs it from your device.</p>
 
