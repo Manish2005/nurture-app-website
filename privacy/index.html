@@ -150,6 +150,10 @@
     color: var(--text-secondary);
     font-size: 0.95rem;
   }
+  .table-wrap { overflow-x: auto; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.92em; margin: 0.5em 0 1em; }
+  th, td { text-align: left; vertical-align: top; padding: 0.55em 0.6em; border-bottom: 1px solid var(--outline-variant); }
+  th { color: var(--text-secondary); font-weight: 600; }
 </style>
 </head>
 <body>
@@ -163,7 +167,7 @@
   </header>
 
   <h1>Privacy Policy</h1>
-  <p class="updated">Last updated: 21 October 2026</p>
+  <p class="updated">Last updated: 28 October 2026 · <a href="ja/" lang="ja" hreflang="ja">日本語</a></p>
 
   <div class="lede">
     <p>Nurture is a plant care reminder app. This policy explains what it does with your information. The short version: your plants stay on your phone unless you choose to start or join a household or subscribe to Premium, which keep them on our server. Making an account does not move them. An account is optional and is needed for identifying plants, households and subscriptions. The free app shows advertisements, and the advertising provider collects information about your device.</p>
@@ -182,7 +186,8 @@
   <p><strong>Your plants, photos, notes, and care history stay on your device</strong> unless you export them, start or join a household, or use Premium cloud backup. Making an account does not move them. What an account, identification and households involve is described in their own sections below.</p>
   <p><strong>Nurture does collect anonymous usage data</strong>, through Google Analytics for Firebase, so that it is possible to see which parts of the app get used and whether reminders are working. That covers things like: the app being opened, a plant being added, a care task being completed or snoozed, a page of the plant guide being opened, and whether notification permission was granted. Some of those carry a detail, such as which kind of care a task was, or which species from the plant guide a plant is.</p>
   <p><strong>It never includes anything you wrote or took.</strong> Not the names you give your plants, not your notes, not your photos. It never includes your account or any identifier Nurture creates, and there is no attempt to work out who you are.</p>
-  <p><strong>You can turn it off.</strong> Settings, under Privacy, has a switch called "Share anonymous usage data". Turning it off stops collection entirely rather than merely reducing it, including the automatic session and screen counts that Google's SDK would otherwise record.</p>
+  <p><strong>In the EEA, the UK and Switzerland, it waits for a yes.</strong> If your phone's region is set to one of those countries, Nurture asks on first launch whether to share anonymous usage data, and collects nothing unless you agree. Elsewhere it is on until you turn it off. Either way, your answer is the same switch, and you can change it at any time.</p>
+  <p><strong>You can turn it off.</strong> Settings, under Other, has a switch called "Share anonymous usage data". Turning it off stops collection entirely rather than merely reducing it, including the automatic session and screen counts that Google's SDK would otherwise record.</p>
   <p>This data is processed by Google. Their handling of it is covered by <a href="https://firebase.google.com/support/privacy">Firebase's privacy documentation</a> and Google's own privacy policy.</p>
   <p><strong>Crash reporting is not enabled.</strong> Nurture does not collect crash or diagnostic reports on its own. The only time details about your device leave it is when you send feedback, described next.</p>
   <p><strong>Advertising is separate.</strong> See the section below.</p>
@@ -215,7 +220,7 @@
   <h2>Identifying a plant from a photo</h2>
   <p>With an account, you can take or choose a photo and Nurture will suggest what plant it is. Nothing is sent until you choose a photo for this.</p>
   <ul>
-    <li><strong>The photo</strong> is made smaller on your phone and sent to Nurture's server, which passes it to <strong>a third-party AI service</strong> to be identified. Nurture does not store the photo. The AI service deletes it within 30 days, or keeps it for up to 2 years if its safety systems flag it, and never uses it to train its models.</li>
+    <li><strong>The photo</strong> is made smaller on your phone and sent to Nurture's server, which passes it to <strong>Anthropic</strong>, an AI service, to be identified. Nurture does not store the photo. The AI service deletes it within 30 days, or keeps it for up to 2 years if its safety systems flag it, and never uses it to train its models.</li>
     <li><strong>A code for your phone</strong> is sent with it, so the monthly allowance counts per phone as well as per account. It is made from your phone's own identifier (on Android, the Android ID; on iPhone, the identifier Apple gives Nurture's developer) and scrambled so it cannot be turned back into that identifier. The identifier itself never leaves your phone.</li>
   </ul>
   <p>The answer names a plant and links to its page in the guide. When a suggested plant is one the guide does not yet cover, Nurture counts how often that species comes up, so it knows which to add next. That count holds the species name only: no account, no photo, and nothing about you.</p>
@@ -246,7 +251,7 @@
   </ul>
 
   <h2>Advertising</h2>
-  <p>Nurture is free, and is paid for by advertisements shown on the Today, Plants and Guide screens. They are supplied by <strong>Google AdMob</strong>, and never appear while you are recording or completing care.</p>
+  <p>Nurture is free, and is paid for by advertisements shown on the Today, Plants, Identify and Guide screens. They are supplied by <strong>Google AdMob</strong>, and never appear while you are recording or completing care.</p>
   <p>To show them, the Google Mobile Ads SDK collects information about your device, which typically includes:</p>
   <ul>
     <li>On Android, your device's advertising identifier. On iPhone, Nurture never asks permission to track you, so that identifier is not available to it</li>
@@ -261,7 +266,23 @@
     <li><a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
     <li><a href="https://policies.google.com/technologies/partner-sites">How Google uses information from sites or apps that use their services</a></li>
   </ul>
-  <p><strong>Your choices.</strong> On iPhone, advertisements are never personalised. They are chosen by context, Nurture never asks to track you, and no consent form is shown, because nothing it does needs one. On Android, where personalised advertisements can be shown, Nurture asks first in the places that require consent for them, the EEA and the UK among others, using Google's consent form, and you can change your answer later from the app's settings. Android also offers controls over the advertising identifier: under Settings → Privacy → Ads, you can reset it or opt out of personalisation entirely.</p>
+  <p><strong>Your choices.</strong> On iPhone, advertisements are never personalised. They are chosen by context, Nurture never asks to track you, and no advertising consent form is shown, because nothing it does needs one. (The usage data question above is a different thing, and appears only where described.) On Android, where personalised advertisements can be shown, Nurture asks first in the places that require consent for them, the EEA and the UK among others, using Google's consent form, and you can change your answer later from the app's settings. Android also offers controls over the advertising identifier: under Settings → Privacy → Ads, you can reset it or opt out of personalisation entirely.</p>
+
+  <h2>Information sent to other companies</h2>
+  <p>Everything Nurture sends outside your phone, who receives it, and why. Each is described in more detail in the sections above.</p>
+  <div class="table-wrap"><table>
+    <thead><tr><th>Sent to</th><th>What</th><th>Why, and when</th></tr></thead>
+    <tbody>
+      <tr><td>Google (Google Analytics for Firebase)</td><td>Anonymous usage events, an app instance identifier, device model, operating system and app version, approximate location from your IP address</td><td>To see which features are used. Until you turn it off; in the EEA, the UK and Switzerland, only after you agree</td></tr>
+      <tr><td>Google (AdMob)</td><td>Device and app information, approximate location from your IP address, interactions with advertisements; on Android, the advertising identifier</td><td>To show and measure advertisements, on the free plan</td></tr>
+      <tr><td>Google (Firebase Authentication, Firestore, Cloud Functions, Cloud Storage)</td><td>Your account; with a household or Premium cloud backup, its plants, notes, history and photos; requests for guide pages</td><td>To run your account, identification, households, backup and the plant guide</td></tr>
+      <tr><td>Apple (App Attest) or Google (Play Integrity)</td><td>A check that the request comes from the genuine app</td><td>To protect Nurture's server, with requests to it</td></tr>
+      <tr><td>Apple or Google (Sign in with Apple, Google Sign-In)</td><td>Your sign-in</td><td>To make or sign in to an account, only if you choose to</td></tr>
+      <tr><td>RevenueCat, Inc.</td><td>Your account number and the store's receipt</td><td>To manage subscriptions, only if you subscribe</td></tr>
+      <tr><td>Anthropic, PBC</td><td>The photo you choose, made smaller</td><td>To identify the plant, only when you ask</td></tr>
+      <tr><td>Google (Google Forms)</td><td>Your feedback and the device details shown before sending</td><td>To answer and fix problems, only when you press Send</td></tr>
+    </tbody>
+  </table></div>
 
   <h2>Children</h2>
   <p>Nurture is not directed at children and is not intended for them. It has no age-gate; if you are responsible for a child using it, note that the advertising described above applies to them as it does to anyone. Subscribers do not see advertisements.</p>
